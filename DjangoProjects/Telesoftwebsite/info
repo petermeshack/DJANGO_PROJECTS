@@ -1,0 +1,15 @@
+#django-admin startproject Telesoftwebsite
+#cd Telesoftwebsite
+#python manage.py startapp gvda
+
+#python manage.py migrate
+#python manage.py createsuperuser
+#python manage.py runserver
+
+Telesoftwebsite - is the website
+gvda - app
+
+
+//the app must be installed in the settings.py
+//the must create its own  urls.py  so the app's urls.py must be includes in the websites urls.py
+//inside the urls.py in the apps's revers to the vies which migh be a webpage

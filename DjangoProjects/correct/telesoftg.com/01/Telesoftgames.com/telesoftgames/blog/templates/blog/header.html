@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>telesoft.com</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	{% include "blog/includes/links.html" %}
+
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body translate="yes">
+<nav id="navbar" class="nav">
+	{% include "blog/includes/htmlnav.html" %}
+</nav>
+
+
+<section id="welcome-section" class="welcome-section">
+	<img src="{% static 'telesoft/images/t.png' %}" id="bgshow">
+ <p>official website for Telesoft company</p>
+</section>
+
+<section id="projects" class="projects-section">
+	{% block content %}
+    {% endblock %}
+</section>
+
+
+<section id="contact" class="contact-section">
+{% include "blog/includes/htmlcontactinfo.html" %}
+</section>
+
+
+{% include "blog/includes/htmlfooter.html" %}
+</body>
+</html>
+
+</html>
